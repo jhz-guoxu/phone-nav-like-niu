@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html style="font-size: 23.5px;">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="new_file1.css"/>
+		
+	</head>
+	<body>
+		<header class="mheaderNavShell J_navShell">
+		    <nav class="mheaderNav shadow J_headerNav">
+		        <div class="mheaderNav-box">
+		            <div class="mheaderNav-menu">
+		                <div class="mheaderNav-menu-bread J_bread">
+		                    <span class="mheaderNav-menu-bread-t">
+		                        <span class="mheaderNav-menu-bread-crack"></span>
+		                    </span>
+		                    <span class="mheaderNav-menu-bread-m">
+		                        <span class="mheaderNav-menu-bread-crack"></span>
+		                    </span>
+		                    <span class="mheaderNav-menu-bread-b">
+		                        <span class="mheaderNav-menu-bread-crack"></span>
+		                    </span>
+		                </div>
+		            </div>
+		            <a class="mheaderNav-logo" href="http://m.niu.com">
+		                <span></span>
+		            </a>
+		            <a class="mheaderNav-user" href="http://m.niu.com/center/"><i class="icon-profile"></i></a>
+		            <a class="mheaderNav-cart" href="http://m.niu.com/cart/"><i class="icon-cart"></i></a>
+		        </div>
+		    </nav>
+		    <div class="mheaderMenu-layer J_menuLayer">
+		        <ul class="mheaderMenu-layer-list">
+		            <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay10" data-target="http://m.niu.com/n1s/">小牛电动 N1S</li>
+		            <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay15" data-target="http://m.niu.com/m1/">小牛电动 M1</li>
+		            <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay20" data-target="http://m.niu.com/store/">小牛商城</li>
+		            <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay25" data-target="http://m.niu.com/niucover/">牛油保</li>
+		            <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay30" data-target="http://bbs.niu.com/">社区</li>
+		            <li class="J_menuItem mheaderMenu-layer-list-item animt-rtl delay35" data-target="http://m.niu.com/expstore/">网点</li>
+		        </ul>
+		    </div>
+		</header>
+		<script src="jquery-2.0.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var flag = 1;
+			$('.mheaderNav-menu').click(function(){
+				if(flag == 1){
+					$('html').addClass('nav-open-noscroll');
+					$('.mheaderMenu-layer-list li').removeClass('animt-rtl');
+					flag = 0;
+				}else{
+					$('html').removeClass('nav-open-noscroll');
+					flag = 1;
+					$('.mheaderMenu-layer-list li').addClass('animt-rtl');
+				}
+				
+			})
+		</script>
+	</body>
+</html>
